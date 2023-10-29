@@ -1,0 +1,107 @@
+/* */
+body {
+    background: #fffbec;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0; 
+    
+    }
+    .hide {
+    display: none !important;
+    }
+    .container {
+    position: relative;
+    left: 15px;
+    width: 1095px;
+    margin: 0 auto;  /* сайт остаётся по центру при смене масштаба */ 
+    
+
+    
+    }
+    .header {
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    .header__logo {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0f0f0f;
+    }
+
+    .header__menu {
+        position: relative;
+        /*top: -10px; вверх*/
+        left: -100px;
+    }
+    .header__menu .menu__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    }
+    .header__menu .menu__btn svg {
+    width: 25px;
+    height: 25px;
+    }
+    .header__menu .menu__list {
+    margin: 0;
+    padding: 10px 20px;
+    list-style-type: none;
+    border-radius: 4px;
+    background: #249dff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: menu-showing .3s;
+    }
+    .header__menu .menu__link {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    text-decoration: none;
+    }
+    @keyframes menu-showing {
+    from { transform: translateY(90%);}
+    }
+
+    /* */
+    /* Прописать стили для блока info и portfolio нужно самостоятельно */
+
+
+    /* _btn это текст и фон кнопки Портфолио */
+    /* bi-chevron-down это галочка открывания */
+    .portfolio__btn {
+        /* background: #eef7ff; */
+    color: #000000;
+    }
+
+    .bi-chevron-down {
+    color: rgb(0, 73, 207)
+    }
+
+    .portfolio {
+    color: #000000;
+    }
+
+    .portfolio__list{
+    color:#000;
+    background: #ffe37c;
+    width: 1065;
+    border: 1px solid black;
+    position: relative;
+    left: -10px;
+    
+    }
+
+    .portfolio_name {
+        font-size: 18px; 
+        letter-spacing: 1px;
+
+    }
+
